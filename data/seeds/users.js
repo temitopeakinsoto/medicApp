@@ -4,12 +4,12 @@ exports.seed = function(knex) {
     .then(function() {
       return knex('users').insert([
         {
-          name: 'Samwise Gamgee',
-          bio: 'Gardener and poet. Married to Rose Cotton',
+          username: 'SamwiseGamgee',
+          password: 'test',
         },
         {
-          name: 'Frodo Baggins',
-          bio: 'The ring bearer',
+          username: 'FrodoBaggins',
+          password: 'test',
         },
       ]);
     });
