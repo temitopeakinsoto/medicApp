@@ -5,7 +5,6 @@ const db = require('../../data/db');
 app.use(express.json());
 
     app.post('/register', (req, res) => {
-        console.log("hello ther", req.body)
         const { username, password} = req.body;
         const user = { username, password}
         
